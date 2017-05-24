@@ -1,4 +1,7 @@
 .scroll {
+  &.-debug {
+    outline: 1px dashed orange;
+  }
   &.-home-page {
     height: calc(100vh - 55px);
     background: #e2e2e2;
@@ -16,8 +19,15 @@
 }
 
 .box{
+  position: absolute;
+  top: 90px;
   @include aspect-ratio(16, 9);
   content: '';
-  width: 60%;
+  width: 80%;
   background: black;
+}
+h1{
+  position: absolute;
+  top: 90px;
+  font-size: 64px;
 }

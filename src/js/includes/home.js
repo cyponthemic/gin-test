@@ -1,31 +1,13 @@
 var $ = require('jquery');
 var Barba = require('barba.js');
-var Scrollbar = require('smooth-scrollbar');
+
 var home = {
     init: function() {
-        this.initSmoothScroll();
-        this.initBarba();
-    },
-    initSmoothScroll: function() {
-      let options = {
-        'speed': .8
-      }
-      Scrollbar.initAll(options);
-      var scrollContainer = document.getElementById('container1');
-      var scrollbar = Scrollbar.init(scrollContainer);
-      var setSkrollr = function($el, data) {
-        for (var i = 0, l = data.length; i < l; i++) { // loop all data entries (scroll positions + css property & value)
-            var d = data[i], // the current data entry
-                px = d[0]; // the scroll position (in pixels)
-                css = d[1]; // the css property + value to set
-            $el.attr('data-' + px, css);
-        }
-      }
-      setSkrollr($('#box-1'), [[0, 'width:100%'], [1500, 'width:0%']]);
 
-      scrollbar.addListener(function (status) {
-          console.log(status);
-      });
+        if($('#barba-wrapper').lenght > 0){
+          this.initBarba();
+        }
+
     },
     initBarba: function(){
       var HideShowTransition = Barba.BaseTransition.extend({
