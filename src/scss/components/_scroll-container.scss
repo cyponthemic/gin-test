@@ -1,33 +1,40 @@
-.scroll {
-  &.-debug {
-    outline: 1px dashed orange;
-  }
+.hero {
   &.-home-page {
-    height: calc(100vh - 55px);
-    background: #e2e2e2;
-    overflow: scroll;
-  }
-
-  &__content {
-    height: 400vh;
+    margin-top: 50px;
   }
 }
 
-.spacer{
-  content: '';
-  display: block;
-}
-
-.box{
+.hero__title{
   position: absolute;
-  top: 90px;
-  @include aspect-ratio(16, 9);
+
+  &.-first {
+    z-index: 1;
+    top: 14vw;
+    right: 0;
+  }
+
+  &.-second {
+    z-index: 3;
+    top: 36vw;
+    right: -50%;
+  }
+}
+
+.hero__image {
+  position: absolute;
+  top: 28vw;
+  z-index: 2;
+  @include aspect-ratio(4, 3);
   content: '';
   width: 80%;
-  background: black;
+  background: url(https://cdn.shopify.com/s/files/1/2014/4933/t/1/assets/bartender_serving.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-h1{
-  position: absolute;
-  top: 90px;
-  font-size: 64px;
+
+.main-content.wrapper {
+    display: block;
+    margin-top: 0px;
+    padding: 0 0 0 0;
+    max-width: 100%;
 }

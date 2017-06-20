@@ -1,0 +1,41 @@
+.intro-block{
+  z-index: 4;
+  transform: translate3d(0,0,0);
+  background: rgba(249, 249, 249, 0.96);
+  padding: 30px;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  overflow: visible;
+  &__title{
+    @include big-title;
+    font-size: 6vw;
+    position: relative;
+    z-index: 11;
+    &.-last{
+      margin-bottom: 1em;
+    }
+  }
+  &__copy{
+    font-size: 1.6em;
+    position: relative;
+    z-index: 11;
+    font-weight: lighter;
+    font-family: Helvetica;
+    width: 55%;
+  }
+  &__trigger{
+    content: '';
+    margin-top: 200px;
+    display: block;
+  }
+  &__carousel{
+    @include aspect-ratio(1,1);
+    position: absolute;
+    right: -30px;
+    top: 20%;
+    width: 60%;
+    content: "";
+  }
+}

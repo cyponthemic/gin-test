@@ -1,6 +1,10 @@
 .js-reveal {
   opacity: 0;
   &ed{
+    opacity: 1;
     transition: opacity 600ms;
   }
+}
+.js-hide-animation-done{
+  opacity: 0;
 }

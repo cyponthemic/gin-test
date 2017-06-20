@@ -1,3 +1,15 @@
-h2{
-  font-size: 34px;
+@mixin big-title{
+  line-height: 1;
+  white-space: nowrap;
+  color: black;
+  font-family: 'Vidaloka', serif;
+  font-weight: normal;
+}
+
+.cg-h {
+  @include big-title();
+
+  &--1{
+    font-size: 12vw;
+  }
 }

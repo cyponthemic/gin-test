@@ -3,11 +3,7 @@ var Barba = require('barba.js');
 
 var home = {
     init: function() {
-
-        if($('#barba-wrapper').lenght > 0){
           this.initBarba();
-        }
-
     },
     initBarba: function(){
       var HideShowTransition = Barba.BaseTransition.extend({

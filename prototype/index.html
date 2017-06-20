@@ -2,19 +2,42 @@
 <head>
   <link href="timber.css" rel="stylesheet" type="text/css" media="all">
   <link href="../dev/assets/main.css" rel="stylesheet" type="text/css" media="all">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
   <script src="../dev/assets/modernizr.min.js" type="text/javascript"></script>
 </head>
-<body>
+<body style="height:10000px;">
   <div id="PageContainer" class="is-moved-by-drawer">
     <main id="barba-wrapper" class="wrapper main-content" role="main">
-      <div class="barba-container" data-namespace="{{ template.name }}" style="min-height: 400vh">
-        <div id="container" class="scroll -home-page -debug">
+      <div class="barba-container" data-namespace="{{ template.name }}">
+        <div id="hero-container" class="hero -home-page">
           <div class="scroll__content">
-              <span id="trigger"></span>
-              <div id="block" class="js-reveal box">
+              <span id="hero-trigger"></span>
+              <div id="hero-image" class="hero__image"></div>
+              <h1 class="cg-h cg-h--1 hero__title -first" id="hero-title">Club Gin</h1>
+              <h2 class="cg-h cg-h--1 hero__title -second" id="hero-subtitle">Members Only, Delivered</h1>
+
+              <span id="intro-block-trigger" class="intro-block__trigger"></span>
+              <div id="intro-block" class="intro-block">
+                  <h3 class="intro-block__title">Expertly chosen bottle,</h3>
+                  <h3 class="intro-block__title -last">delivered every month?</h3>
+                  <p  class="intro-block__copy">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Cursus turpis massa tincidunt dui ut ornare. Morbi tempus iaculis urna id. Est pellentesque elit ullamcorper dignissim cras.
+                  </p>
+                  <div id="scroll-carousel" class="intro-block__carousel scroll-carousel">
+                      <div id="scroll-carousel-frame-1" class="scroll-carousel__frame -1"
+                        style="background-image: url('https://cdn.shopify.com/s/files/1/2014/4933/t/1/assets/daffis-gin.jpg');"
+                      ></div>
+                      <div id="scroll-carousel-frame-2" class="scroll-carousel__frame -2"
+                        style="background-image: url('https://cdn.shopify.com/s/files/1/2014/4933/t/1/assets/torquay-gin.jpg');"
+                      ></div>
+                      <div id="scroll-carousel-frame-3" class="scroll-carousel__frame -3"
+                        style="background-image: url('https://cdn.shopify.com/s/files/1/2014/4933/t/1/assets/brooklyn-gin.jpg');"
+                      ></div>
+                  </div>
               </div>
-              <h1 id="title">Club Gin</h1>
           </div>
         </div>
       </div>

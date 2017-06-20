@@ -9,6 +9,8 @@
 //lib
 @import "vendor/scroll";
 
+@import "global/reveal";
+
 @import "materialize/materialize";
 @import "variables/colors";
 
@@ -16,4 +18,6 @@
 @import "atoms/typography";
 
 //components
-@import "components/scroll-container"
+@import "components/scroll-carousel";
+@import "components/scroll-container";
+@import "scroll-elements/intro-block";
